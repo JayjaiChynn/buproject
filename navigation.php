@@ -9,7 +9,7 @@
     <div class="collapse navbar-collapse d-flex justify-content-around">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="index.php">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../buproject/movies.php">Movies</a>
@@ -30,7 +30,7 @@
           <a class="nav-link" href="../buproject/register.php">Sign-up</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" href="log-in.php">Login</a>
         </li>
       </ul>
     </div>

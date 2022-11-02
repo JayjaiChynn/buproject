@@ -1,7 +1,7 @@
 <?php
 include_once('./header.php');
 ?>
-<h1>Sign-Up</h1>
+
 
 <?php
 
@@ -54,10 +54,31 @@ if (isset($_POST['registerBtn'])) {
 
 ?>
 
-<form method="post">
-    <input type="text" name="name" placeholder="name"><br>
-    <input type="text" name="email" placeholder="Email"><br>
-    <input type="text" name="password" placeholder="Password"><br>
-    <input type="text" name="cPassword" placeholder="Confirm password"><br>
-    <input type="submit" name="registerBtn" value="Register"><br>
-</form>
+<div class="container-registration">
+    <div class="row justify-content-center">
+        <div class="container">
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <h2>Create a new account</h2>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="name">Name</label>
+                    <input class="form-control" type="text" name="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="email">Email Adress</label>
+                    <input class="form-control" type="text" name="email" placeholder="email">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="password">Password</label>
+                    <input class="form-control" type="text" name="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="cPassword">confirmation</label>
+                    <input class="form-control" type="text" name="cPassword" placeholder="Confirm password">
+                </div>
+                <input class="btn btn-primary" type="submit" name="registerBtn" value="Sign Up">
+            </form>
+        </div>
+    </div>
+</div>

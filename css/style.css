@@ -23,6 +23,10 @@ body {
   --Cod-Gray: #121212;
 }
 
+
+
+
+
 .container-details {
 
   padding-top: 50px;
@@ -43,4 +47,10 @@ body {
 
 .movie {
   background-color: #121212;
+}
+
+
+.login {
+  margin: auto;
+  border: 1px bold black;
 }
