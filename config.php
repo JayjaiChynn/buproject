@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect('localhost', 'root', 'root', 'IMDB', 8889);
+$conn = mysqli_connect('localhost', 'root', '', 'IMDB');
 
 // if ($conn) {
 //     echo "you are connected to IMDB";

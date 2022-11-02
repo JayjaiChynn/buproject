@@ -7,18 +7,20 @@ FROM movies m
 INNER JOIN directors d ON m.director_id = d.id 
 WHERE m.id = " . $_GET['id'];
 
-
-
 $result = mysqli_query($conn, $query);
 $movie = mysqli_fetch_assoc($result);
 mysqli_close($conn);
 
-echo "<br>";
-echo $movie['title'];
-echo "<br>";
 
-echo $movie['description'];
+?>
 
+<div class="container-flouid container-details d-flex justify-content-center">
+  <div class="card card-details">
+    <img src="./assets/images/<?= $movie['poster'] ?>" width="250px">
+    <h4 class="card-title text-light"><?= $movie['title'] ?></h4>
+    <h6 class="card-text text-light"><?= $movie['description'] ?></h6>
+  </div>
+</div>
+</div>
 
-
-include_once('./footer.php');
+<?php include_once('./footer.php'); ?>

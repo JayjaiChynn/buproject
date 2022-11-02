@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --black: #121212;
+  --Eerie-Black: #1a1a1a;
+  --grey: rgb(128, 128, 128);
+  --dark-gray: #272727;
+  --blue-grey: #212529;
+  --cyan-blue: #5e6a75;
+  --cyan-blue-2: #5e6a75;
+  --light-cyan-blue: #cce3ff;
+  --Cod-Gray: #121212;
+}
+
+.container-details {
+
+  padding-top: 50px;
+  margin: auto;
+  background-color: var(--Cod-Gray);
+}
+
+
+.card-details {
+  background-color: var(--Cod-Gray);
+  width: 500px;
+}
+
+.card-details img {
+  width: 100%;
+}
+
+.movie {
+  background-color: #121212;
+}

@@ -28,7 +28,7 @@ if (isset($_GET['ASC'])) {
     mysqli_close($conn);
 } ?>
 
-<div>
+<div class="container-flouid movie">
     <?php foreach ($movies as $movie) : ?>
         <div class="container">
             <div class="card">
