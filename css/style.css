@@ -33,11 +33,12 @@ body {
 
 .card-details {
   background-color: var(--Cod-Gray);
-  width: 500px;
+  width: 400px;
 }
 
 .card-details img {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .movie {
