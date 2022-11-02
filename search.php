@@ -16,11 +16,11 @@ if (isset($_POST['search'])) {
         <div class="container">
             <div class="card">
                 <div class="d-flex">
-                    <img src="../buildup-backend/assets/images/<?= $movie['poster'] ?>" width=" 200px">
+                    <img src="../buproject/assets/images/<?= $movie['poster'] ?>" width=" 200px">
                     <div class="d-flex row">
                         <h2><?= $movie['title'] ?></h2>
                         <div><?= substr($movie['description'], 0, 30); ?></div>
-                        <a href="../buildup-backend/deatails-movies.php?id=<?= $movie['id']; ?>">Detail page</a>
+                        <a href="../buproject/deatails-movies.php?id=<?= $movie['id']; ?>">Detail page</a>
                     </div>
                 </div>
             </div>
