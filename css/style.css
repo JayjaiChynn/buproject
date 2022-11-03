@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --black: #121212;
+  --Eerie-Black: #1a1a1a;
+  --grey: rgb(128, 128, 128);
+  --dark-gray: #272727;
+  --blue-grey: #212529;
+  --cyan-blue: #5e6a75;
+  --cyan-blue-2: #5e6a75;
+  --light-cyan-blue: #cce3ff;
+  --Cod-Gray: #121212;
+}
+
+/* Home Page  */
+.card-home {
+  width: 80%;
+  padding: 5px;
+  align-items: center;
+
+}
+
+.img-container {
+  border-radius: 1em;
+  height: 80%;
+  width: 100%;
+}
+
+.img-container img {
+  display: block;
+  border-radius: 0.5em;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Details Movie Page  */
+.container-details {
+
+  padding-top: 50px;
+  margin: auto;
+  background-color: var(--Cod-Gray);
+}
+
+
+.card-details {
+  background-color: var(--Cod-Gray);
+  width: 400px;
+}
+
+.card-details img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+/* Movies Page  */
+.movie {
+  background-color: #121212;
+}
+
+/* insert New Movies Page  */
+.card-insert {
+  height: 300px;
+}
