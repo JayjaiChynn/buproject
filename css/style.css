@@ -23,10 +23,28 @@ body {
   --Cod-Gray: #121212;
 }
 
+/* Home Page  */
+.card-home {
+  width: 80%;
+  padding: 5px;
+  align-items: center;
 
+}
 
+.img-container {
+  border-radius: 1em;
+  height: 80%;
+  width: 100%;
+}
 
+.img-container img {
+  display: block;
+  border-radius: 0.5em;
+  width: 100%;
+  object-fit: cover;
+}
 
+/* Details Movie Page  */
 .container-details {
 
   padding-top: 50px;
@@ -45,12 +63,13 @@ body {
   margin-bottom: 10px;
 }
 
+
+/* Movies Page  */
 .movie {
   background-color: #121212;
 }
 
-
-.login {
-  margin: auto;
-  border: 1px bold black;
+/* insert New Movies Page  */
+.card-insert {
+  height: 300px;
 }

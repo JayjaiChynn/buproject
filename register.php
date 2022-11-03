@@ -54,31 +54,37 @@ if (isset($_POST['registerBtn'])) {
 
 ?>
 
-<div class="container-registration">
-    <div class="row justify-content-center">
-        <div class="container">
-            <form class="form" method="POST">
-                <div class="form-group">
-                    <h2>Create a new account</h2>
+
+<section class="vh-100" gradient-custom>
+    <div class="container-registration container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card p-5" style="border-radius: 1rem;">
+                    <form class="form" method="POST">
+                        <div class="form-group">
+                            <h2 class="text-center m-2 p-2">Create a new account</h2>
+                        </div>
+                        <div class="form-group m-2">
+
+                            <input class="form-control" type="text" name="name" placeholder="Name">
+                        </div>
+                        <div class="form-group m-2">
+
+                            <input class="form-control" type="text" name="email" placeholder="email">
+                        </div>
+                        <div class="form-group m-2">
+
+                            <input class="form-control" type="text" name="password" placeholder="Password">
+                        </div>
+                        <div class="form-group m-2">
+
+                            <input class="form-control" type="text" name="cPassword" placeholder="Confirm password">
+                        </div>
+                        <input class="btn btn-dark btn-lg px-5" type="submit" name="registerBtn" value="Sign Up">
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label class="control-label" for="name">Name</label>
-                    <input class="form-control" type="text" name="name" placeholder="Name">
-                </div>
-                <div class="form-group">
-                    <label class="control-label" for="email">Email Adress</label>
-                    <input class="form-control" type="text" name="email" placeholder="email">
-                </div>
-                <div class="form-group">
-                    <label class="control-label" for="password">Password</label>
-                    <input class="form-control" type="text" name="password" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <label class="control-label" for="cPassword">confirmation</label>
-                    <input class="form-control" type="text" name="cPassword" placeholder="Confirm password">
-                </div>
-                <input class="btn btn-primary" type="submit" name="registerBtn" value="Sign Up">
-            </form>
+            </div>
         </div>
     </div>
-</div>
+</section>
+<?php include_once('./footer.php'); ?>

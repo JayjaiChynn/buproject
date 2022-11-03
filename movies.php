@@ -7,14 +7,6 @@ $query = "SELECT * FROM movies";
 $result = mysqli_query($conn, $query);
 $movies = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-?>
-<form method="GET">
-    <input type="submit" value="ASC" name="ASC" />
-</form>
-<form method="GET">
-    <input type="submit" value="DESC" name="DESC" />
-</form>
-<?php
 if (isset($_GET['DESC'])) {
     $query = "SELECT * FROM movies ORDER BY title DESC";
     $result = mysqli_query($conn, $query);
@@ -28,19 +20,29 @@ if (isset($_GET['ASC'])) {
     mysqli_close($conn);
 } ?>
 
-<div class="container-flouid movie">
+<div class="container-flouid ">
     <?php foreach ($movies as $movie) : ?>
         <div class="container">
-            <div class="card">
+            <div class="card card-movie ">
                 <div class="d-flex">
                     <img src="../buproject/assets/images/<?= $movie['poster'] ?>" width=" 200px">
-                    <div class="d-flex row">
+                    <div class="d-flex row p-4">
                         <h2><?= $movie['title'] ?></h2>
                         <div><?= substr($movie['description'], 0, 30); ?></div>
-                        <a href="../buproject/deatails-movies.php?id=<?= $movie['id']; ?>">Detail page</a>
+                        <div class="d-flex flex-row gap-3">
+                            <form method="GET">
+                                <input type="submit" value="ASC" name="ASC" />
+                            </form>
+                            <form method="GET">
+                                <input type="submit" value="DESC" name="DESC" />
+                            </form>
+                        </div>
+                        <a class="" href="../buproject/deatails-movies.php?id=<?= $movie['id']; ?>">Detail page</a>
                     </div>
                 </div>
             </div>
         </div>
 </div>
 <?php endforeach; ?>
+
+<?php include_once('./footer.php'); ?>

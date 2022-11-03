@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark text-light">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">IMDB</a>
@@ -19,7 +19,7 @@
           <a class="nav-link" href="../buproject/insert-movie.php">Insert New Movies</a>
         </li>
       </ul>
-      <form class="d-flex justify-content-between" method="POST" action="../buproject/search.php">
+      <form class="d-flex gap-3" method="POST" action="../buproject/search.php">
         <input name="input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="search">Search</button>
       </form>

@@ -7,10 +7,7 @@ $query = "SELECT * FROM directors";
 $result = mysqli_query($conn, $query);
 $directors = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-?>
-<h1>Insert Movies</h1>
 
-<?php
 if (isset($_POST['add'])) {
     $title = strip_tags(trim($_POST['title']));
     $poster = strip_tags(trim($_POST['poster']));
@@ -58,19 +55,35 @@ if (isset($_POST['add'])) {
 
 ?>
 
-<form method="post">
-    <input type="text" name="title" placeholder="title"><br>
-    <input type="text" name="poster" placeholder="poster"><br>
-    <input type="date" name="release_date" placeholder="release_date"><br>
-    <select name="option">
-        <?php foreach ($directors as $director) : ?>
-            <option value="<?= $director['id'] ?>"><?= $director['first_name'] . " " . $director['last_name'] ?>
-            </option>
-        <?php endforeach; ?>
-    </select>
+<section class="vh-100" gradient-custom style=" background-color: #000;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-4 ">
+                <div class="card" style="border-radius: 1rem;">
+                    <div class="card-insert card-body p-4 text-center" style="height:550px ;">
+                        <h2 class="fw-bold mb-2 text-uppercase">Insert Movies</h2>
+                        <form class="form-outline form-white mb-4" method="POST">
+                            <input class="form-control" type="text" name="title" placeholder="title"><br>
+                            <input class="form-control" type="text" name="poster" placeholder="poster"><br>
+                            <input class="form-control" type="date" name="release_date" placeholder="release_date"><br>
 
-    <div>
-        <textarea name="description" placeholder="description"></textarea><br>
-        <input type="submit" name="add" value="add"><br>
+                            <select class="form-control" name="option">
+                                <?php foreach ($directors as $director) : ?>
+                                    <option value="<?= $director['id'] ?>"><?= $director['first_name'] . " " . $director['last_name'] ?>
+                                    </option><br>
+                                <?php endforeach; ?>
+                            </select>
+
+                            <div class="p-3">
+                                <textarea class="form-control z-depth-1" rows="5" name="description" placeholder="description"></textarea><br>
+                            </div>
+                            <input class="btn btn-secondary btn-lg px-5" type="submit" name="add" value="add"><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</form>
+</section>
+
+<?php include_once('./footer.php'); ?>
